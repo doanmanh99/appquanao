@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuThongBao"
+        android:icon="@drawable/thongbao"
+        android:title="Thông báo" />
+    <item
+        android:id="@+id/menuGioHang"
+        android:icon="@drawable/gio_hang"
+        android:title="Giỏ Hàng" />
+    <item
+        android:id="@+id/menuDangNhap"
+        android:icon="@drawable/user"
+        android:title="Đăng nhập" />
+    <item
+        android:id="@+id/menuDangXuat"
+        android:icon="@drawable/dangxuat"
+        android:title="Thoát" />
+    <item android:title="Danh Mục Sản Phẩm">
+        <menu>
+        <item
+            android:id="@+id/menuQuanJeans"
+            android:title="QUẦN JEANS NAM" />
+        <item
+            android:id="@+id/menuQuanShort"
+            android:title="QUẦN SHORT NAM" />
+        <item
+            android:id="@+id/menuQuanJogger"
+            android:title="QUẦN JOGGER NAM" />
+        <item
+            android:id="@+id/menuAoSoMi"
+            android:title="ÁO SƠ MI NAM" />
+        <item
+            android:id="@+id/menuAoThun"
+            android:title="ÁO THUN NAM" />
+        </menu>
+    </item>
+</menu>

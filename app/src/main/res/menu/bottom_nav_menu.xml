@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_bottom_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Trang Chủ" />
+
+    <item
+        android:id="@+id/nmenu_bottom_danhmuc"
+        android:icon="@drawable/bo_suu_tap"
+        android:title="Danh Mục" />
+
+    <item
+        android:id="@+id/nmenu_bottom_giohang"
+        android:icon="@drawable/gio_hang"
+        android:title="Giỏ Hàng" />
+    <item
+        android:id="@+id/menu_bottom_tintuc"
+        android:icon="@drawable/tin_tuc"
+        android:title="Tin Tức" />
+
+    <item
+        android:id="@+id/menu_bottom_user"
+        android:icon="@drawable/user"
+        android:title="Cá Nhân" />
+
+</menu>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BanQuanAo</string>
+    <string name="danh_m_c_s_n_ph_m">DANH MỤC SẢN PHẨM</string>
+    <string name="title_activity_bottom_navigation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_api_key">AIzaSyCw_L1FyY-ROZJBr4SRmga8t19owIUHTVw</string>
+</resources>
