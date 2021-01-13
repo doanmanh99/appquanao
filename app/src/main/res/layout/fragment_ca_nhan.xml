@@ -1,92 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".activity.CaNhanFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/white"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center|start"
-        android:drawableLeft="@drawable/user"
-        android:id="@+id/txtvDangNhap"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:text="Đăng Nhập"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center|start"
-        android:drawableLeft="@drawable/ic_exit"
-        android:id="@+id/txtvDangXuat"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:text="Thoát"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center|start"
-        android:drawableLeft="@drawable/ic_update"
-        android:id="@+id/txtvCapNhat"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:text="Cập nhật hồ sơ"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_gravity="center|start"
-        android:layout_marginTop="15dp"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:text="CÀI ĐẶT CÁI NHÂN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center|start"
-        android:drawableLeft="@drawable/lich_su_mua_hang"
-        android:id="@+id/txtvLichSu"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:text="Lịch sử mua hàng"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center|start"
-        android:drawableLeft="@drawable/ic_add_shopping_cart_black_24dp"
-        android:id="@+id/txtvGioHang"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:text="Giỏ hàng của tôi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center|start"
-        android:drawableLeft="@drawable/thong_tin"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:text="Thông tin công ty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:background="@color/white" />
 
     <TextView
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center|start"
-        android:drawableLeft="@drawable/dieu_khoan"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:text="Điều khoản"
+        android:id="@+id/txtvDangNhap"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/user"
+        android:text="Đăng Nhập"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtvDangXuat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_exit"
+        android:text="Thoát"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtvCapNhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_update"
+        android:text="Cập nhật hồ sơ"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginTop="15dp"
+        android:text="CÀI ĐẶT CÁ NHÂN"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtvLichSu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/lich_su_mua_hang"
+        android:text="Lịch sử mua hàng"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtvGioHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_add_shopping_cart_black_24dp"
+        android:text="Giỏ hàng của tôi"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/thong_tin"
+        android:text="Thông tin công ty"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/dieu_khoan"
+        android:text="Điều khoản"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
 </LinearLayout>

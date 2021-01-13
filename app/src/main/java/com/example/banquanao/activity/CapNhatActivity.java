@@ -20,8 +20,11 @@ import com.android.volley.toolbox.Volley;
 import com.example.banquanao.R;
 import com.example.banquanao.ultil.StringURL;
 
+import org.mindrot.jbcrypt.BCrypt;
+
 import java.util.HashMap;
 import java.util.Map;
+
 
 public class CapNhatActivity extends AppCompatActivity {
     Toolbar toolbar;
@@ -54,7 +57,7 @@ public class CapNhatActivity extends AppCompatActivity {
         String matkhaumoiOK=edtMatKhauMoiOK.getText().toString().trim();
         String diachi=edtDiaChi.getText().toString().trim();
         if (matkhaumoi.equals(matkhaumoiOK)) {
-            if (matkhaucu.equals(LoginDialog.matkhau)) {
+            if (BCrypt.checkpw(matkhaucu,LoginDialog.matkhau)) {
                 RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, StringURL.URL_UPDATE,
                         new Response.Listener<String>() {

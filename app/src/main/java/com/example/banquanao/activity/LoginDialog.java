@@ -104,7 +104,7 @@ public class LoginDialog extends DialogFragment {
                                 if (checkboxNhoTaiKhoan.isChecked()){
                                     SharedPreferences.Editor editor= sharedPreferences.edit();
                                     editor.putString("username",taikhoan);
-                                    editor.putString("password",matkhau);
+                                    editor.putString("password",mk);
                                     editor.putBoolean("checked",checkboxNhoTaiKhoan.isChecked());
                                     editor.commit();
                                 }else {

@@ -3,7 +3,6 @@ package com.example.banquanao.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -36,7 +35,6 @@ public class ChiTietSanPhamActivity extends AppCompatActivity {
         ActionBar();
         getData();
         CatchEventSpinner();
-
         btnDatMua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
