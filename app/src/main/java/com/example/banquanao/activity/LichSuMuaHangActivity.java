@@ -33,7 +33,7 @@ public class LichSuMuaHangActivity extends AppCompatActivity {
     Toolbar toolbar;
     RecyclerView recyclerview;
     ArrayList<SanPham> mangsanpham;
-    SanPhamAdapter sanPhamAdapter;
+    LichSuAdapter sanPhamAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,9 +54,9 @@ public class LichSuMuaHangActivity extends AppCompatActivity {
     }
     private void getData() {
         mangsanpham=new ArrayList<>();
-        sanPhamAdapter=new SanPhamAdapter(mangsanpham,getApplicationContext());
+        sanPhamAdapter=new LichSuAdapter(mangsanpham,getApplicationContext());
         recyclerview.setHasFixedSize(true);
-        recyclerview.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
+        recyclerview.setLayoutManager(new GridLayoutManager(getApplicationContext(),1));
         recyclerview.setAdapter(sanPhamAdapter);
         RequestQueue requestQueue=Volley.newRequestQueue(getApplicationContext());
         StringRequest stringRequest=new StringRequest(Request.Method.POST, StringURL.URL_LICH_SU,
@@ -96,9 +96,9 @@ public class LichSuMuaHangActivity extends AppCompatActivity {
         recyclerview=findViewById(R.id.recyclerview);
         toolbar=findViewById(R.id.toolbar);
         mangsanpham=new ArrayList<>();
-        sanPhamAdapter=new SanPhamAdapter(mangsanpham,getApplicationContext());
+        sanPhamAdapter=new LichSuAdapter(mangsanpham,getApplicationContext());
         recyclerview.setHasFixedSize(true);
-        recyclerview.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
+        recyclerview.setLayoutManager(new GridLayoutManager(getApplicationContext(),1));
         recyclerview.setAdapter(sanPhamAdapter);
     }
 }

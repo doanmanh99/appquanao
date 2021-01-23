@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="#8092F4"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <androidx.appcompat.widget.Toolbar
         app:title="Quần Short Nam"

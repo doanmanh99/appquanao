@@ -28,8 +28,9 @@ import java.util.Map;
 
 public class CapNhatActivity extends AppCompatActivity {
     Toolbar toolbar;
-    EditText edtTen,edtSDT,edtEmail,edtMatKhauCu,edtMatKhauMoi,edtMatKhauMoiOK,edtDiaChi;
+    EditText edtTen, edtSDT, edtEmail, edtMatKhauCu, edtMatKhauMoi, edtMatKhauMoiOK, edtDiaChi;
     Button btnCapNhat;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,15 +50,15 @@ public class CapNhatActivity extends AppCompatActivity {
     }
 
     private void CapNhat() {
-        String ten=edtTen.getText().toString().trim();
-        String sdt=edtSDT.getText().toString().trim();
-        String email=edtEmail.getText().toString().trim();
-        String matkhaucu=edtMatKhauCu.getText().toString().trim();
-        String matkhaumoi=edtMatKhauMoi.getText().toString().trim();
-        String matkhaumoiOK=edtMatKhauMoiOK.getText().toString().trim();
-        String diachi=edtDiaChi.getText().toString().trim();
+        String ten = edtTen.getText().toString().trim();
+        String sdt = edtSDT.getText().toString().trim();
+        String email = edtEmail.getText().toString().trim();
+        String matkhaucu = edtMatKhauCu.getText().toString().trim();
+        String matkhaumoi = edtMatKhauMoi.getText().toString().trim();
+        String matkhaumoiOK = edtMatKhauMoiOK.getText().toString().trim();
+        String diachi = edtDiaChi.getText().toString().trim();
         if (matkhaumoi.equals(matkhaumoiOK)) {
-            if (BCrypt.checkpw(matkhaucu,LoginDialog.matkhau)) {
+            if (matkhaucu.equals(LoginDialog.matkhau)) {
                 RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, StringURL.URL_UPDATE,
                         new Response.Listener<String>() {
@@ -91,11 +92,11 @@ public class CapNhatActivity extends AppCompatActivity {
                     }
                 };
                 requestQueue.add(stringRequest);
-            }else {
-                Toast.makeText(getApplicationContext(),"Mật khẩu không đúng",Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(getApplicationContext(), "Mật khẩu không đúng", Toast.LENGTH_LONG).show();
             }
-        }else {
-            Toast.makeText(getApplicationContext(),"Mật khẩu mói không trùng nhau",Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(getApplicationContext(), "Mật khẩu mói không trùng nhau", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -109,15 +110,16 @@ public class CapNhatActivity extends AppCompatActivity {
             }
         });
     }
+
     private void mapping() {
-        toolbar=findViewById(R.id.toolbar);
-        edtTen=findViewById(R.id.edtTen);
-        edtSDT=findViewById(R.id.edtSDT);
-        edtEmail=findViewById(R.id.edtEmail);
-        edtMatKhauCu=findViewById(R.id.edtMatKhauCu);
-        edtMatKhauMoi=findViewById(R.id.edtMatKhauMoi);
-        edtMatKhauMoiOK=findViewById(R.id.edtMatKhauMoiOK);
-        btnCapNhat=findViewById(R.id.btnCapNhat);
-        edtDiaChi=findViewById(R.id.edtDiaChi);
+        toolbar = findViewById(R.id.toolbar);
+        edtTen = findViewById(R.id.edtTen);
+        edtSDT = findViewById(R.id.edtSDT);
+        edtEmail = findViewById(R.id.edtEmail);
+        edtMatKhauCu = findViewById(R.id.edtMatKhauCu);
+        edtMatKhauMoi = findViewById(R.id.edtMatKhauMoi);
+        edtMatKhauMoiOK = findViewById(R.id.edtMatKhauMoiOK);
+        btnCapNhat = findViewById(R.id.btnCapNhat);
+        edtDiaChi = findViewById(R.id.edtDiaChi);
     }
 }

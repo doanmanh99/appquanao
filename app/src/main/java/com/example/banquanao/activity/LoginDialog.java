@@ -78,7 +78,7 @@ public class LoginDialog extends DialogFragment {
         });
     }
 
-    private void EventClickButton() {
+    public void EventClickButton() {
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -14,7 +14,6 @@
         <activity android:name=".activity.CapNhatActivity"></activity>
         <activity android:name=".activity.LichSuMuaHangActivity" />
         <activity android:name=".activity.ChiTietSanPhamActivity" />
-        <activity android:name=".activity.DanhMucActivity" />
         <activity android:name=".activity.AoThunActivity" />
         <activity android:name=".activity.AoSoMiActivity" />
         <activity android:name=".activity.QuanJoggerActivity" />
